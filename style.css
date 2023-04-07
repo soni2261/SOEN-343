@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #157347;
+    font-family: "Urbanist";
+}
+
+h6{
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    font-family: "Urbanist";
+}
+form{
+    margin: 20px auto;
+    width: 320px;
+    color: black;
+}
+
+input {
+    padding: 10px;
+    font-size: inherit;
+}
+
+input[type="text"] {
+    display: block;
+    margin-bottom: 25px;
+    width: 95%;
+    border: 2px solid #ebebeb !important;
+    background: #fbfbfb !important;
+    border-radius: 12px !important;
+}
+
+input[type="button"] {
+    width: 330px;
+    height: 45px;
+    border: black;
+    background: rgb(221, 221, 221);
+    -webkit-box-shadow: 5px 5px 10px -5px #595959;
+    box-shadow: 5px 5px 10px -5px #595959;
+    color: black;
+    border-radius: 20px;
+}
+
+input[type="reset"] {
+    width: 330px;
+    height: 45px;
+    border: black;
+    background: rgb(221, 221, 221);
+    -webkit-box-shadow: 5px 5px 10px -5px #595959;
+    box-shadow: 5px 5px 10px -5px #595959;
+    color: black;
+    margin: 10px 0 0 0;
+    border-radius: 20px;
+}
+
+input:focus {
+    background: white;
+}
+
+.submissionform {
+    max-width: 728px;
+    margin: 2rem auto;
+    border: 3px solid;
+    border-radius: 20px;
+    padding: 3rem;
+    display: block;
+    -webkit-box-shadow: 5px 5px 10px -5px #595959;
+    box-shadow: 5px 5px 10px -5px #595959;
+    background-color: rgb(240, 240, 240);
+    border-color: rgb(240, 240, 240);
+}
