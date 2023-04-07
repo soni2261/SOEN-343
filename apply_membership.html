@@ -12,14 +12,13 @@
 
 <body>
 <h1>Apply to a Membership</h1>
-<form class="submissionform" action="signup.php" method="post" id="form">
-    <input name="firstName" style="font-family: Urbanist" type="text" placeholder="*First name" id="firstName">
-    <input name="lastName" style="font-family: Urbanist" type="text" placeholder="*Last name" id="lastName">
-    <input name="age" style="font-family: Urbanist" type="text" placeholder="*Age" id="age">
-    <input name="address" style="font-family: Urbanist" type="text" placeholder="*Address" id="address">
-    <input name="postalCode" style="font-family: Urbanist" type="text" placeholder="*Postal Code" id="postalCode">
+<form class="submissionform" action="apply_membership.php" method="post" id="form">
+    <input name="firstName" style="font-family: Urbanist" type="text" placeholder="*First name" id="firstName" pattern="[A-Za-z]{1,}" title="Name must only contain letters" required>
+    <input name="lastName" style="font-family: Urbanist" type="text" placeholder="*Last name" id="lastName" pattern="[A-Za-z]{1,}" title="Name must only contain letters" required>
+    <label class="ageLabel" for="age">Age</label>
+    <select name="age" class="age" id="age" required> </select>
 
-    <input style="font-family: Urbanist" type="button" name="Sign Up" id="submitButton" value="Apply">
+    <input style="font-family: Urbanist" type="submit" name="Apply" id="submitButton" value="Apply">
     <input style="font-family: Urbanist" type="Reset" name="Reset" id="reset">
 </form>
 

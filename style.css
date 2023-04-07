@@ -35,7 +35,29 @@ input[type="text"] {
     border-radius: 12px !important;
 }
 
-input[type="button"] {
+.age {
+    display: block;
+    margin-bottom: 25px;
+    width: 102%;
+    height: 40px;
+    border: 2px solid #ebebeb !important;
+    background: #fbfbfb !important;
+    border-radius: 12px !important;
+    font-size: inherit;
+    font-family: "Urbanist";
+}
+
+.ageLabel {
+    padding: 10px;
+    font-size: inherit;
+    font-family: "Urbanist";
+}
+
+option {
+    color: black;
+}
+
+input[type="submit"] {
     width: 330px;
     height: 45px;
     border: black;
