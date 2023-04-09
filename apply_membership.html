@@ -13,11 +13,24 @@
 <body>
 <h1>Apply to a Membership</h1>
 <form class="submissionform" action="apply_membership.php" method="post" id="form">
-    <input name="firstName" style="font-family: Urbanist" type="text" placeholder="*First name" id="firstName" pattern="[A-Za-z]{1,}" title="Name must only contain letters" required>
-    <input name="lastName" style="font-family: Urbanist" type="text" placeholder="*Last name" id="lastName" pattern="[A-Za-z]{1,}" title="Name must only contain letters" required>
-    <label class="ageLabel" for="age">*Age</label>
+    <input name="firstName" style="font-family: Urbanist" type="text" placeholder="*First Name" id="firstName" pattern="[A-Za-z]{1,}" title="Name must only contain letters" required>
+    <input name="lastName" style="font-family: Urbanist" type="text" placeholder="*Last Name" id="lastName" pattern="[A-Za-z]{1,}" title="Name must only contain letters" required>
+    <label class="label" for="age">*Age</label>
     <select name="age" class="age" id="age" required> </select>
-
+    <input name="cardNumber" style="font-family: Urbanist" type="text" placeholder="*Card Number" id="cardNumber" pattern="[0-9]{12,12}" title="Must contain 12 digits" required>
+    <label class="label" for="expirationDate">*Expiration Date</label>
+    <input name="expirationDate" style="font-family: Urbanist" type="month" placeholder="*Expiration Date" id="expirationDate" required>
+    <input name="cvv" style="font-family: Urbanist" type="text" placeholder="*CVV" id="cvv" pattern="[0-9]{3,3}" title="Must contain 3 digits" required>
+    <label class="label">*Membership Plan</label>
+    <div>
+        <input class="radio-input" type="radio" name="role" id="bronze" value="bronze" checked>
+        <label class="radio-label" style="font-family: Urbanist" for="bronze">Bronze</label>
+        <input class="radio-input" type="radio" name="role" id="silver" value="silver">
+        <label class="radio-label" style="font-family: Urbanist" for="silver">Silver</label>
+        <input class="radio-input" type="radio" name="role" id="gold" value="gold">
+        <label class="radio-label" style="font-family: Urbanist" for="gold">Gold</label>
+    </div>
+    <div class="padding"></div>
     <input style="font-family: Urbanist" type="submit" name="Apply" id="submitButton" value="Apply">
     <input style="font-family: Urbanist" type="Reset" name="Reset" id="reset">
 </form>
